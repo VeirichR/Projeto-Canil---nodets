@@ -2,6 +2,8 @@ import {Request, Response} from 'express'
 import {createMenuObject} from '../helpers/createMenuObject'
 import {Pet} from '../models/pet'
 
+//envia os dados para os views
+
 export const home = (req: Request, res: Response) => {
     let list = Pet.getAll()
 
